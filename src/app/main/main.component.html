@@ -1,0 +1,12 @@
+<main> <div class="container" [ngStyle]="{'background':isOpen?'hsl(207, 26%, 17%)':''}">
+  <div class="buscador">
+    <app-search></app-search>
+    <app-filtro (newItemEvent)="get_by_region($event)"></app-filtro>
+  </div>
+    
+   <app-banderas [paises]="paises" ></app-banderas>
+ </div>
+</main>
+
+
+

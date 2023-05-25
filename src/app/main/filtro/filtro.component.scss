@@ -1,0 +1,105 @@
+@import "../../../assets/scss/themes.scss";
+.darkmode{
+    position: relative;
+    
+    .filtrado{
+         background: hsl(209, 23%, 22%);
+         border-radius: 3px;
+         padding: 12px;
+         width: 50%;
+         margin-top: 2rem;
+         font-size: 12px;
+         color: white;
+         transition: all 0.5s;
+         display: grid;
+           grid-template-columns: 1fr auto;
+         
+           svg{
+             width: 20px;
+           }
+         @include tablet {
+              
+         }
+         @include medium {
+           width: auto;
+           margin-top: 0;
+           display: grid;
+           grid-template-columns: 1fr auto;
+           
+           svg{
+             width: 20px;
+           }
+         }
+    }
+    .regiones{
+       background: hsl(209, 23%, 22%);
+       border-radius: 3px;
+       width: 50%;
+       margin-top: 5px;
+       font-size: 12px;
+       padding: 10px 1rem;
+       position: absolute;
+       transition: all 0.5s;
+       color: white;
+       @include tablet {
+              
+       }
+       @include medium {
+         width: 100%;
+       }
+       div{
+        margin-top: 10px;
+       }
+    }
+}
+.filtro{
+    position: relative;
+    
+    .filtrado{
+        width: 50%;
+        background: hsl(0, 0%, 100%);
+        border-radius: 3px;
+        padding: 12px;
+        margin-top: 2rem;
+        font-size: 12px;
+        transition: all 0.5s;
+        display: grid;
+        grid-template-columns: 1fr auto;
+           
+           svg{
+             width: 20px;
+           }
+        @include tablet {
+              
+        }
+        @include medium {
+          width: auto;
+          margin-top: 0;
+          display: grid;
+          grid-template-columns: 1fr auto;
+          
+          svg{
+            width: 20px;
+          }
+        }
+    }
+    .regiones{
+       background: hsl(0, 0%, 100%);
+       border-radius: 3px;
+       width: 50%;
+       margin-top: 5px;
+       font-size: 12px;
+       padding: 10px 1rem;
+       position: absolute;
+       transition: all 0.5s;
+       @include tablet {
+              
+       }
+       @include medium {
+         width: 100%;
+       }
+       div{
+        margin-top: 10px;
+       }
+    }
+}

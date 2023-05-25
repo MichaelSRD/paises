@@ -1,0 +1,68 @@
+@import "../../../assets/scss/themes.scss";
+.banderas {
+
+ 
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include medium {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  padding: 0 1.5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+   
+ 
+  .darkmode {
+    background: hsl(209, 23%, 22%);
+    color: white;
+    transition: all 0.5s;
+    .imagen {
+      img {
+        width: 100%;
+        height: 200px;
+        @include tablet {
+         
+        }
+        @include medium {
+          height: 150px;
+        }
+      }
+    }
+    .info {
+      padding: 1rem 1rem;
+      :first-child {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .bandera {
+    background: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    transition: all 0.5s;
+    .imagen {
+      img {
+        width: 100%;
+        height: 200px;
+        @include tablet {
+         
+        }
+        @include medium {
+          height: 150px;
+        }
+      }
+    }
+    .info {
+      padding: 1rem 1rem;
+      :first-child {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  
+}

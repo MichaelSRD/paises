@@ -1,0 +1,39 @@
+.my_class1{
+    transition: all 0.5s;
+    color: white;
+    svg{
+        color: white;
+        fill: black;
+    }
+}
+.darkmode{
+    .container{
+        color: white;
+        transition: all 0.5s;
+    }
+}
+header{
+    transition: all 0.5s;
+    background: hsl(0, 0%, 100%);
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        padding: 2rem 1rem;
+        color: hsl(200, 15%, 8%);
+        transition: all 0.5s;
+        .titulo{
+            font-size: 9px;
+        }
+        .Darkmode{
+            font-weight: 600;
+            svg{
+                width: 20px;
+                margin-right: 10px;
+            }
+            display: flex;
+        }
+    }
+}

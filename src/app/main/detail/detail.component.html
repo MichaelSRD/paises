@@ -1,0 +1,36 @@
+<div class="contenedor" [ngClass]="isOpen? 'darkmode' : ''"     >
+    <div    [ngClass]="isOpen? 'back_dark' : 'back'"  (click)="backClicked()" >
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg>
+        <p>Back</p>
+    </div>
+    <div class="detail" *ngFor="let pais of paises" >
+        <div class="imagen" >
+            <img src={{pais.flags.png}} alt="{{pais.flags.alt}}">
+        </div>
+        <div class="info">
+            <h2 >{{pais.name.common}}</h2>
+
+            <div class="info_uno">
+                <p><strong>Native Name:</strong>{{ pais.name.official}}</p>
+                <p><strong>Population:</strong>{{pais.population | number: '1.0-0' }}</p>
+                <p><strong>Region:</strong>{{pais.region}}</p>
+                <p><strong>Sub Region:</strong>{{pais.subregion}}</p>
+                <p ><strong>Capital:</strong> {{pais.capital}} </p>
+            </div>
+           
+            <div class="info_dos">
+                <p><strong>Top Level Domain:</strong>{{pais.tld}}</p>
+                <p ><strong>Currencies:</strong> <span *ngFor="let cur of curren">{{cur.name}}</span></p>
+                <p ><strong>Languages:</strong><span *ngFor="let len of lengua;">{{len}},</span> </p>
+            </div>
+            <div class="info_tres">
+                <h3>Border Countries:</h3>
+                <div class="ciudades" >
+                    <div  [ngClass]="isOpen? 'uno_dark' : 'uno'" *ngFor="let fr of fronteras" routerLink="/detail/{{fr.name.common}}">
+                       <p>{{fr.name.common}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

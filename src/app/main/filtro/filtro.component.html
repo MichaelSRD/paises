@@ -1,0 +1,13 @@
+<div  [ngClass]="isOpen? 'darkmode' : 'filtro'" >
+    <div class="filtrado" (click)="filtrado_regiones()">
+        <p>Filter by Region </p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+    </div>
+    <div class="regiones" [ngStyle]="{'display':filtro_open?'':'none'}" >
+        <div class="Africa" (click)="region('Africa')">Africa</div>
+        <div class="America" (click)="region('America')">America</div>
+        <div class="Asia" (click)="region('Asia')">Asia</div>
+        <div class="Europe" (click)="region('Europe')">Europe</div>
+        <div class="Oceania" (click)="region('Oceania')">Oceania</div>
+    </div>
+</div>

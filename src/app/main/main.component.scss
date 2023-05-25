@@ -1,0 +1,28 @@
+@import "../../assets/scss/themes.scss";
+main{
+    
+    .container{
+        max-width: 1440px;
+        padding: 2rem 1rem;
+        color: hsl(200, 15%, 8%);
+        transition: all 0.5s;
+        .buscador{
+
+            @include tablet {
+              
+              }
+              @include medium {
+                display: flex;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+            align-items: center;
+              }
+              app-search{
+                @include medium {
+                   width: 40%;
+                  }
+              }
+            
+        }
+    }
+}

@@ -1,0 +1,149 @@
+@import "../../../assets/scss/themes.scss";
+.darkmode{
+    background:  hsl(207, 26%, 17%);
+    transition: all 0.5s;
+    .back_dark{
+        background: hsl(209, 23%, 22%);
+        display: flex;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        width: 30%;
+        margin-bottom: 1rem;
+        justify-content: space-around;
+        transition: all 0.5s;
+        @include medium {
+            width: 20%;
+          }
+        svg{
+            width: 20px;
+            color: white;
+            
+          }
+    }
+    .detail{
+        color: white;
+        @include medium {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            align-items: center;
+            grid-gap: 2rem;
+          }
+        .info{
+            .info_tres{
+                .ciudades{
+                    .uno_dark{
+                      background: hsl(209, 23%, 22%); 
+                      display: flex;
+                        border-radius: 5px;
+                        transition: all 0.5s;
+                         padding: 5px;
+                         justify-content: center; 
+                    }  
+                } 
+            }
+        }
+       
+    }
+}
+
+.contenedor{
+    padding: 2rem 2rem;
+    
+    .back{
+        display: flex;
+        border-radius: 5px;
+        background: white;
+        padding: 10px;
+        width: 30%;
+        margin-bottom: 1rem;
+        justify-content: space-around;
+        transition: all 0.5s;
+        @include medium {
+            width: 20%;
+          }
+        svg{
+          width: 20px;
+        }
+        p{
+          
+        }
+    }
+    .detail{
+        @include tablet {
+            
+          }
+          @include medium {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            align-items: center;
+            grid-gap: 2rem;
+          }
+        .imagen{
+            img{
+              @include medium {
+                width: 100%;
+                 height: 300px;
+              }
+            }
+        }
+        .info{
+            @include medium {
+                display: grid;
+              }
+            h2{
+
+            }
+            .info_uno{
+                @include medium {
+                    grid-area: 2/1;
+                  }
+                margin-top: 1rem;
+                p{
+                    line-height: 2rem;
+                }
+            }
+            .info_dos{
+                margin-top: 1rem;
+                @include medium {
+                    grid-area: 2/1;
+                    margin-left: 53%;
+                  }
+                p{
+                    line-height: 2rem;
+                    word-break: break-all;
+                }
+            }
+            .info_tres{
+                margin-top: 1rem;
+                @include medium {
+                    grid-area: 3;
+                    display: grid;
+                    grid-gap: 1rem;
+                    grid-template-columns: auto 1fr;
+                  }
+                h3{
+
+                }
+                .ciudades{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-gap: 1rem;
+                    margin-top: 1rem;
+                    @include medium {
+                        margin: 0;
+                      }
+                    .uno{
+                        display: flex;
+                        border-radius: 5px;
+                         background: white;
+                         padding: 5px;
+                         justify-content: center;
+                         transition: all 0.5s;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
